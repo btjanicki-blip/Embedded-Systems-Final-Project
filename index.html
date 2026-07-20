@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An embedded Breakout game built for the RealDigital Urbana board." />
+    <title>Breakout | Embedded Systems Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="src/site.js" defer></script>
+  </head>
+  <body>
+    <header class="shell">
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top">BRICK<span>OUT</span></a>
+        <a class="nav-link" href="https://github.com/btjanicki-blip" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="shell hero">
+        <div>
+          <p class="eyebrow">ECE 253 Final Project · Brian Janicki</p>
+          <h1>Classic arcade, <em>built in hardware.</em></h1>
+          <p class="intro">A polished Breakout-style game running on a MicroBlaze processor. The system combines an event-driven game engine, custom LCD graphics, board controls, and a rotary encoder into a complete embedded arcade experience.</p>
+          <div class="actions">
+            <a class="button primary" href="#project">Explore the project</a>
+            <a class="button secondary" href="https://github.com/btjanicki-blip" target="_blank" rel="noreferrer">View GitHub</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/action-shot.jpg" alt="The Breakout game running on its TFT display" />
+          <div class="project-tag"><strong>Real hardware.</strong><br />Live graphics at 240 × 320.</div>
+        </div>
+      </section>
+
+      <section class="shell" id="project">
+        <div class="section-heading">
+          <p class="eyebrow">The build</p>
+          <h2>One complete embedded game system.</h2>
+          <p>From the physical inputs to the state machine and pixel-level display driver, every piece works together to deliver a familiar arcade game on dedicated hardware.</p>
+        </div>
+        <div class="stats" aria-label="Project specifications">
+          <div class="stat"><strong>240 × 320</strong><span>ILI9341 TFT display</span></div>
+          <div class="stat"><strong>48</strong><span>bricks per game board</span></div>
+          <div class="stat"><strong>60 Hz</strong><span>game update tick</span></div>
+          <div class="stat"><strong>QP-nano</strong><span>event-driven framework</span></div>
+        </div>
+      </section>
+
+      <section class="shell feature-grid">
+        <article class="feature"><div class="icon">◉</div><h3>Arcade control</h3><p>The rotary encoder moves the paddle left and right, while its integrated click begins play after setup.</p></article>
+        <article class="feature"><div class="icon">▦</div><h3>Custom game states</h3><p>Menu, active play, pause, victory, and game-over states are modeled with the lightweight QP-nano framework.</p></article>
+        <article class="feature"><div class="icon">✦</div><h3>Built for feedback</h3><p>Players choose one to four lives using the Urbana board buttons, with scoring and elapsed time shown at the end of a run.</p></article>
+      </section>
+
+      <section class="shell system">
+        <div>
+          <p class="eyebrow">System architecture</p>
+          <h2>Hardware meets an event-driven game loop.</h2>
+          <p class="intro">Interrupt-driven inputs are translated into game signals. The game active object handles state transitions, gameplay updates, collision detection, and rendering to the SPI display.</p>
+        </div>
+        <img class="diagram" src="images/block-diagram.png" alt="Block diagram of the Urbana board, buttons, rotary encoder, and LCD display" />
+      </section>
+
+      <section class="shell system alternate">
+        <img class="diagram" src="images/board-layout.jpg" alt="The original physical board layout" />
+        <div class="parts">
+          <div class="part"><b>01</b><div><strong>RealDigital Urbana board</strong><p>Hosts the MicroBlaze processor and delivers the board-button inputs.</p></div></div>
+          <div class="part"><b>02</b><div><strong>2.8-inch ILI9341 SPI TFT</strong><p>Renders the menu, game board, HUD, victory screen, and game-over screen.</p></div></div>
+          <div class="part"><b>03</b><div><strong>Pmod rotary encoder</strong><p>Provides responsive paddle movement and a click-to-start action.</p></div></div>
+        </div>
+      </section>
+
+      <section class="shell">
+        <div class="section-heading"><p class="eyebrow">In action</p><h2>From menu to final brick.</h2><p>The game uses colorful brick layouts, a live paddle-and-ball loop, and dedicated end screens to create a complete arcade flow.</p></div>
+        <div class="gallery">
+          <figure class="primary-shot"><img src="images/action-shot.jpg" alt="Breakout gameplay on the TFT display" /><figcaption>Live gameplay on the SPI TFT display.</figcaption></figure>
+          <figure class="small-shot"><img src="images/main-menu.jpg" alt="Breakout main menu on the TFT display" /><figcaption>Life selection and play instructions.</figcaption></figure>
+          <figure class="small-shot"><img src="images/victory.jpg" alt="Breakout victory screen on the TFT display" /><figcaption>Victory screen after clearing the board.</figcaption></figure>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="shell"><span>Built by Brian Janicki · Embedded Systems · <span id="year"></span></span><a href="https://btjanicki-blip.github.io/" target="_blank" rel="noreferrer">btjanicki-blip.github.io ↗</a></div></footer>
+  </body>
+</html>
