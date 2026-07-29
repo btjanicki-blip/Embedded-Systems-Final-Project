@@ -52,27 +52,8 @@
       <section class="shell system">
         <p class="eyebrow">Some challenges I encountered:</p>
         <p>The first main challenge I faced when implementing my Breakout game was that I wasn’t ignoring interrupts while doing things that didn’t need interrupts, like drawing the menus or boards. This would overflow the event queue, and thus crash the game. In order to fix this, I made sure to temporarily disable the game tick related interrupts while drawing any screen, which fixed the issue. Another issue I faced was that sometimes the ball would phase through the paddle if it collided directly with the corner of the paddle, which I fixed by doing an overlap check, which checks if the ball’s hitbox ever crosses or overlaps with the paddle’s hitbox, then it snaps it to the top of the paddle, which stops the ball from continuing to phase through the paddle.</p>
-      </section>
-      <section class="shell system">
-        <div>
-          <p class="eyebrow">System architecture</p>
-          <h2>Hardware meets an event-driven game loop.</h2>
-          <p class="intro">Interrupt-driven inputs are translated into game signals. The game active object handles state transitions, gameplay updates, collision detection, and rendering to the SPI display.</p>
-        </div>
-        <img class="diagram" src="images/block-diagram.png" alt="Block diagram of the Urbana board, buttons, rotary encoder, and LCD display" />
-      </section>
-
-      <section class="shell system alternate">
-        <img class="diagram" src="images/board-layout.jpg" alt="The original physical board layout" />
-        <div class="parts">
-          <div class="part"><b>01</b><div><strong>RealDigital Urbana board</strong><p>Hosts the MicroBlaze processor and delivers the board-button inputs.</p></div></div>
-          <div class="part"><b>02</b><div><strong>2.8-inch ILI9341 SPI TFT</strong><p>Renders the menu, game board, HUD, victory screen, and game-over screen.</p></div></div>
-          <div class="part"><b>03</b><div><strong>Pmod rotary encoder</strong><p>Provides responsive paddle movement and a click-to-start action.</p></div></div>
-        </div>
-      </section>
-
       <section class="shell">
-        <div class="section-heading"><p class="eyebrow">In action</p><h2>From menu to final brick.</h2><p>The game uses colorful brick layouts, a live paddle-and-ball loop, and dedicated end screens to create a complete arcade flow.</p></div>
+        <div class="section-heading"><p class="eyebrow">Menu Interfaces:</p><h2>Main Menu, Victory Menu, Game Over Menu</h2><p>The main menu appears when you boot up the game, and the victory or game over menus are visible upon completion of the game, based on whether the user eliminated all bricks or lost all lives trying to do so. Clicking any button returns to the main menu from the victory or game over menus.</p></div>
         <div class="gallery">
           <figure class="primary-shot"><img src="images/main-menu.jpg" alt="Breakout main menu on the TFT display" /><figcaption>Life selection and play instructions.</figcaption></figure>
           <figure class="small-shot"><img src="images/victory.jpg" alt="Breakout victory screen on the TFT display" /><figcaption>Victory screen after clearing the board.</figcaption></figure>
