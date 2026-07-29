@@ -52,7 +52,8 @@
       <section class="shell system">
         <div>
           <p class="eyebrow">Some challenges I encountered:</p>
-          <p>The first main challenge I faced when implementing my Breakout game was that I wasn’t ignoring interrupts while doing things that didn’t need interrupts, like drawing the menus or boards. This would overflow the event queue, and thus crash the game. In order to fix this, I made sure to temporarily disable the game tick related interrupts while drawing any screen, which fixed the issue. Another issue I faced was that sometimes the ball would phase through the paddle if it collided directly with the corner of the paddle, which I fixed by doing an overlap check, which checks if the ball’s hitbox ever crosses or overlaps with the paddle’s hitbox, then it snaps it to the top of the paddle, which stops the ball from continuing to phase through the paddle.</p>
+        </div>
+        <p>The first main challenge I faced when implementing my Breakout game was that I wasn’t ignoring interrupts while doing things that didn’t need interrupts, like drawing the menus or boards. This would overflow the event queue, and thus crash the game. In order to fix this, I made sure to temporarily disable the game tick related interrupts while drawing any screen, which fixed the issue. Another issue I faced was that sometimes the ball would phase through the paddle if it collided directly with the corner of the paddle, which I fixed by doing an overlap check, which checks if the ball’s hitbox ever crosses or overlaps with the paddle’s hitbox, then it snaps it to the top of the paddle, which stops the ball from continuing to phase through the paddle.</p>
       </section>
 
       <section class="shell feature-grid">
