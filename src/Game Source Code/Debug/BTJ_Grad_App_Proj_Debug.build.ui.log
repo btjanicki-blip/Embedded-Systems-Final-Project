@@ -1,0 +1,129 @@
+2025-12-11T13:21:05.25042400255-13:21:05 **** Build of configuration Debug for project BTJ_Grad_App_Proj ****
+000-make all 
+000-Building file: ../src/bsp.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bsp.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bsp.d" -MT"src/bsp.o" -o "src/bsp.o" "../src/bsp.c"
+000-In file included from ../src/qpn_port.h:38,
+000-                 from ../src/bsp.c:8:
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000-Finished building: ../src/bsp.c
+000- 
+000-Building file: ../src/fonts.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fonts.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/fonts.d" -MT"src/fonts.o" -o "src/fonts.o" "../src/fonts.c"
+000-Finished building: ../src/fonts.c
+000- 
+000-Building file: ../src/game.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game.d" -MT"src/game.o" -o "src/game.o" "../src/game.c"
+000-In file included from ../src/qpn_port.h:38,
+000-                 from ../src/game.h:11,
+000-                 from ../src/game.c:8:
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000-../src/game.c: In function 'Game_gameOver':
+000/BTJ_Grad_App_Proj/src/game.c392-1-1implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]1-../src/game.c:392:13: warning: implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]
+000-  392 |             snprintf(buf, sizeof(buf), "Score: %d", score);
+000-      |             ^~~~~~~~
+000/BTJ_Grad_App_Proj/src/game.c10-1-1include '<stdio.h>' or provide a declaration of 'snprintf'0-../src/game.c:10:1: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+000-    9 | #include "lcd.h"
+000-  +++ |+#include <stdio.h>
+000-   10 | #include <string.h>
+000/BTJ_Grad_App_Proj/src/game.c392-1-1incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]1-../src/game.c:392:13: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+000-  392 |             snprintf(buf, sizeof(buf), "Score: %d", score);
+000-      |             ^~~~~~~~
+000/BTJ_Grad_App_Proj/src/game.c392-1-1include '<stdio.h>' or provide a declaration of 'snprintf'0-../src/game.c:392:13: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+000-../src/game.c: In function 'Game_victory':
+000/BTJ_Grad_App_Proj/src/game.c419-1-1incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]1-../src/game.c:419:13: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+000-  419 |             snprintf(buf, sizeof(buf), "Score: %d", score);
+000-      |             ^~~~~~~~
+000/BTJ_Grad_App_Proj/src/game.c419-1-1include '<stdio.h>' or provide a declaration of 'snprintf'0-../src/game.c:419:13: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+000/BTJ_Grad_App_Proj/src/game.c428-1-1format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]1-../src/game.c:428:56: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+000-  428 |             snprintf(timeBuf, sizeof(timeBuf), "Time: %u s", timeSeconds);
+000-      |                                                       ~^     ~~~~~~~~~~~
+000-      |                                                        |     |
+000-      |                                                        |     uint32_t {aka long unsigned int}
+000-      |                                                        unsigned int
+000-      |                                                       %lu
+000-Finished building: ../src/game.c
+000- 
+000-Building file: ../src/lcd.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lcd.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lcd.d" -MT"src/lcd.o" -o "src/lcd.o" "../src/lcd.c"
+000-Finished building: ../src/lcd.c
+000- 
+000-Building file: ../src/main.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-In file included from ../src/qpn_port.h:38,
+000-                 from ../src/main.c:8:
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000-Finished building: ../src/main.c
+000- 
+000-Building file: ../src/qepn.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/qepn.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/qepn.d" -MT"src/qepn.o" -o "src/qepn.o" "../src/qepn.c"
+000-In file included from ../src/qpn_port.h:38,
+000-                 from ../src/qepn.c:28:
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000-Finished building: ../src/qepn.c
+000- 
+000-Building file: ../src/qfn.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/qfn.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/qfn.d" -MT"src/qfn.o" -o "src/qfn.o" "../src/qfn.c"
+000-In file included from ../src/qpn_port.h:38,
+000-                 from ../src/qfn.c:28:
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000-Finished building: ../src/qfn.c
+000- 
+000-Building file: ../src/qfn_init.c
+000-Invoking: MicroBlaze gcc compiler
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/qfn_init.o" -I/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/qfn_init.d" -MT"src/qfn_init.o" -o "src/qfn_init.o" "../src/qfn_init.c"
+000-In file included from ../src/qpn_port.h:38,
+000-                 from ../src/qfn_init.c:28:
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000-Finished building: ../src/qfn_init.c
+000- 
+000-Building target: BTJ_Grad_App_Proj.elf
+000-Invoking: MicroBlaze gcc linker
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/sw/BTJ_Grad_Plat_proj/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "BTJ_Grad_App_Proj.elf"  ./src/bsp.o ./src/fonts.o ./src/game.o ./src/lcd.o ./src/main.o ./src/qepn.o ./src/qfn.o ./src/qfn_init.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: BTJ_Grad_App_Proj.elf
+000- 
+000-Invoking: MicroBlaze Print Size
+000-mb-size BTJ_Grad_App_Proj.elf  |tee "BTJ_Grad_App_Proj.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  94340	   6108	   8896	 109344	  1ab20	BTJ_Grad_App_Proj.elf
+000-Finished building: BTJ_Grad_App_Proj.elf.size
+000- 
+00255-
+13:21:06 Build Finished (took 1s.650ms)
+

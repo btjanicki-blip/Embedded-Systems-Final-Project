@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="BTJ_Grad_App_Proj" location="/home/btjanicki/workspace/BTJ_Grad_App_Proj" platform="/home/btjanicki/workspace/BTJ_Grad_Plat_proj/export/BTJ_Grad_Plat_proj/BTJ_Grad_Plat_proj.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="BTJ_Grad_App_Proj_system" sysConfig="BTJ_Grad_Plat_proj" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="96b5d1b0ee0f5f31567845eec43da397">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.661369891">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1795419891" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
